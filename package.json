@@ -1,13 +1,20 @@
 {
   "name": "gridsome-plugin-remark-youtube",
   "version": "1.0.0",
-  "description": "Gridsome remark plugin to embed YouTube videos",
+  "description": "Gridsome Remark plugin to embed YouTube videos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mark Honeychurch <mark@honeychurch.org>",
   "homepage": "https://github.com/markhoney/gridsome-plugin-remark-youtube",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markhoney/gridsome-plugin-remark-youtube.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markhoney/gridsome-plugin-remark-youtube/issues"
+  },
   "license": "MIT",
   "keywords": [
     "vue",

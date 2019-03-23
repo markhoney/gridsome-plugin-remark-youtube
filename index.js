@@ -10,10 +10,10 @@ module.exports = (options) => {
   return tree => {
 		visit(tree, 'inlineCode', node => {
 			if (node.value.startsWith('youtube:')) {
-        const videoID = getVideoID(node.value.slice(11, -1));
+        const videoID = getVideoID(node.value.slice(8));
 				if (videoID) {
 					node.type = 'html';
-					node.value = `<div style="width: ${options.width || '100%'}; margin: 0 auto;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/${videoID}"></iframe></div></div>`;
+					node.value = `<div style="width: ${options.width || '100%'}; margin: 0 ${options.align || '0'};"><div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/${videoID}"></iframe></div></div>`;
 				}
 			}
 		});
