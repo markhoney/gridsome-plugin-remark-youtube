@@ -1,4 +1,4 @@
-# Gridsome Remark Twitter
+# Gridsome Remark YouTube Plugin
 
 This is a plugin for [Gridsome](https://gridsome.org/)'s chosen markdown engine, [Remark](https://remark.js.org/), and allows you to embed [YouTube](https://www.youtube.com/) videos in [markdown](https://daringfireball.net/projects/markdown/) files.
 
@@ -49,7 +49,7 @@ module.exports = {
         route: '/blog/:year/:month/:day/:slug',
         remark: {
           plugins: [
-            ['gridsome-plugin-remark-youtube', {width: '500px', align: 0}]
+            ['gridsome-plugin-remark-youtube', {width: '500px', align: 'auto'}]
           ]
         }
       }
@@ -61,7 +61,7 @@ module.exports = {
 
 ## Usage
 
-This plugin uses the same markdown syntax as the Gatsby plugin, with backticks and a youtube: prefix, followed by the YouTube URL. Any valid YouTube URL _should_ work.
+This plugin uses the same markdown syntax as the Gatsby plugin, with backticks (\`) and a `youtube:` prefix, followed by the YouTube URL. Any valid YouTube URL _should_ work.
 
 ```markdown
 `youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`
