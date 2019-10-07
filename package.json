@@ -12,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/markhoney/gridsome-plugin-remark-youtube.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": {
     "url": "https://github.com/markhoney/gridsome-plugin-remark-youtube/issues"
   },
