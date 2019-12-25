@@ -7,7 +7,7 @@ module.exports = (options) => {
 		return false;
 	}
 
-  return tree => {
+  return async tree => {
 		visit(tree, 'inlineCode', node => {
 			if (node.value.startsWith('youtube:')) {
         const videoID = getVideoID(node.value.slice(8));
